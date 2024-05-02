@@ -1,0 +1,68 @@
+/* Propeties of Scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    /* display: none; */
+
+    background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 12s ease infinite;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  ::-webkit-scrollbar:hover{
+    width: 10px;
+    height: 10px;
+  }
+
+  
+  /* Propeties of App */
+  .App-color{
+    font-family: 'Oxygen', sans-serif;
+    /* background: rgb(34, 193, 195);
+    background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(192, 191, 188, 0.8007995434501926) 100%); */
+    background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 12s ease infinite;
+
+    height: 100vh;
+    width: auto;
+    overflow: auto;
+  }
+  
+/* Definiendo container */
+/* .container{
+    height:  100vh;
+    width: 100vw;
+} */
+
+  /* Definiendo el keyframes para cambiar */
+  @keyframes cambiar {
+    0% {
+      background-position: 0 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Definiendo el keyframes para circle */
+  @keyframes circle {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
