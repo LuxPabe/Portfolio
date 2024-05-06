@@ -1,13 +1,10 @@
 /* Propeties of Scrollbar */
 ::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     /* display: none; */
 
     background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
-    background-size: 400% 400%;
-    position: relative;
-    animation: cambiar 12s ease infinite;
   }
   
   ::-webkit-scrollbar-thumb {
@@ -17,6 +14,10 @@
   ::-webkit-scrollbar:hover{
     width: 10px;
     height: 10px;
+    background: linear-gradient(50deg, rgb(41, 45, 95), rgb(98, 58, 121), rgb(41, 45, 95));
+    background-size: 1000% 1000%;
+    position: relative;
+    animation: cambiar 12s ease infinite;
   }
 
   
@@ -26,20 +27,262 @@
     /* background: rgb(34, 193, 195);
     background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(192, 191, 188, 0.8007995434501926) 100%); */
     background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
-    background-size: 400% 400%;
+    background-size: 1000% 1000%;
     position: relative;
     animation: cambiar 12s ease infinite;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 
     height: 100vh;
     width: auto;
     overflow: auto;
   }
   
-/* Definiendo container */
-/* .container{
-    height:  100vh;
-    width: 100vw;
-} */
+/* Definiendo container body*/
+.container-start{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+/* Definiendo container-image */
+.container-image{
+  min-width: 40px;
+  max-width: 140px;
+  min-height: 40px;
+  max-height: 140px;
+  
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  border: solid 3px white;
+  margin-bottom: 0.7vh;
+}
+
+/* Definiendo image:hover */
+.container-image:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.40);
+  border: solid 3px black;
+}
+
+.buttom{
+  border: solid;
+  border-radius: 40px;
+  padding: 6px;
+  font-size: 15px;
+}
+
+.buttom:hover{
+  background: aqua;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.30);
+}
+
+.start{
+  text-align: center;
+  color: white;
+  margin: 50px;
+}
+
+.container-info{
+  border: 4px solid black;
+  background: white;
+  height: auto;
+  width: auto;
+  margin: 40px;
+}
+
+.aboutme{
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+.download{
+  padding: 16px 35px;
+  text-decoration: none;
+  border: rgb(255, 181, 0) 1px solid;
+  letter-spacing: 2px;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.download:hover{
+  background-color: rgb(255, 181, 0);
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.30);
+}
+
+.container-proyects{
+  display: flex;
+  flex: row;
+  justify-content: space-evenly;
+
+}
+
+.card{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.card .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+}
+
+.card .back{
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link{
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a{
+  color: #f3f3f3;
+  padding: 16px 35px;
+  text-decoration: none;
+  border: rgb(255, 181, 0) 1px solid;
+  letter-spacing: 2px;
+  color: #fff;
+  border-radius: 40px;
+  
+}
+
+.card .back .link a:hover{
+  background-color: rgb(255, 181, 0);
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.30);
+}
+
+.card .back .h3{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back .p{
+  letter-spacing: 1px;
+}
+
+.card:hover .front{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.tecno{
+  justify-content: center;
+  margin: 10px;
+}
+
+.tecno img{
+  min-width: 15px;
+  max-width: 80px;
+  min-height: 15px;
+  max-height: 80px;
+  margin: 5px;
+}
+
+.tecno img:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.40);
+}
+
+.footer-c {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left:0px;
+  bottom:0px;
+  height:60px;
+  width: 80%;
+  background:#1c1a20;
+  color: white;
+  border-radius: 5px;
+}
+
+.footer-c img{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.footer-c img:hover{
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.30);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.space-evenly{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blanco{
+  border-style: outset;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.white{
+  color: white;
+}
 
   /* Definiendo el keyframes para cambiar */
   @keyframes cambiar {
