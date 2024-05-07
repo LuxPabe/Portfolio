@@ -1,54 +1,58 @@
+/* Start CSS */
+
 /* Propeties of Scrollbar */
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    /* display: none; */
+  width: 4px;
+  height: 4px;
+  /* display: none; */
 
-    background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  }
-  ::-webkit-scrollbar:hover{
-    width: 10px;
-    height: 10px;
-    background: linear-gradient(50deg, rgb(41, 45, 95), rgb(98, 58, 121), rgb(41, 45, 95));
-    background-size: 1000% 1000%;
-    position: relative;
-    animation: cambiar 12s ease infinite;
-  }
+  background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
+}
 
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar:hover{
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(50deg, rgb(41, 45, 95), rgb(98, 58, 121), rgb(41, 45, 95));
+  background-size: 1000% 1000%;
+  position: relative;
+  animation: cambiar 12s ease infinite;
+}
+/* End Properties of Scrollbar */
   
   /* Propeties of App */
-  .App-color{
-    font-family: 'Oxygen', sans-serif;
-    /* background: rgb(34, 193, 195);
-    background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(192, 191, 188, 0.8007995434501926) 100%); */
-    background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
-    background-size: 1000% 1000%;
-    position: relative;
-    animation: cambiar 12s ease infinite;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+.App-color{
+  font-family: 'Oxygen', sans-serif;
+  /* background: rgb(34, 193, 195);
+  background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(192, 191, 188, 0.8007995434501926) 100%); */
+  background: linear-gradient(50deg, rgb(28, 31, 72), rgb(58, 25, 77), rgb(28, 31, 72));
+  background-size: 1000% 1000%;
+  position: relative;
+  animation: cambiar 12s ease infinite;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 
-    height: 100vh;
-    width: auto;
-    overflow: auto;
-  }
+  height: 100vh;
+  width: auto;
+  overflow: auto;
+}
+/* End Properties of App */
   
-/* Definiendo container body*/
+/* Defination container body*/
 .container-start{
-    height: 100vh;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* End defination container body  */
 
-/* Definiendo container-image */
+/* Defination container-image */
 .container-image{
   min-width: 40px;
   max-width: 140px;
@@ -61,33 +65,42 @@
   border: solid 3px white;
   margin-bottom: 0.7vh;
 }
+/* End defination container-image */
 
-/* Definiendo image:hover */
+/* Defination image:hover */
 .container-image:hover{
   transition: all 0.2s ease-in-out;
   transform: scale(1.40);
   border: solid 3px black;
 }
+/* End Defination container image:hover */
 
+/* Defination buttom */
 .buttom{
   border: solid;
   border-radius: 40px;
   padding: 6px;
   font-size: 15px;
 }
+/* End defination buttom */
 
+/* Defination buttom hover */
 .buttom:hover{
   background: aqua;
   transition: all 0.4s ease-in-out;
   transform: scale(1.30);
 }
+/* End defination buttom hover */
 
+/* Defination Start */
 .start{
   text-align: center;
   color: white;
   margin: 50px;
 }
+/* End defination Start */
 
+/* Defination container info */
 .container-info{
   border: 4px solid black;
   background: white;
@@ -95,14 +108,16 @@
   width: auto;
   margin: 40px;
 }
+/* End defination container info */
 
+/* Defination aboutme */
 .aboutme{
   text-align: center;
   margin: 20px;
 }
+/* End defination aboutme */
 
-
-
+/* Defination Download */
 .download{
   padding: 16px 35px;
   text-decoration: none;
@@ -111,31 +126,35 @@
   color: #fff;
   border-radius: 40px;
 }
+/* End defination Download */
 
+/* Defination Download hover */
 .download:hover{
   background-color: rgb(255, 181, 0);
   transition: all 0.4s ease-in-out;
   transform: scale(1.30);
 }
+/* End defination Download hover */
 
+/* Defination container proyects */
 .container-proyects{
   display: flex;
   flex: row;
   justify-content: space-evenly;
 
 }
+/* End defination container proyects */
 
+/* Defination Card */
 .card{
   position: relative;
   width: 300px;
   height: 300px;
   margin: 20px;
-  min-width: 80px;
-  min-height: 80px;
-  max-width: 300px;
-  max-height: 300px;
 }
+/* End defination Card */
 
+/* Defination Card Face */
 .card .face{
   position: absolute;
   width: 100%;
@@ -145,19 +164,25 @@
   overflow: hidden;
   transition: .5s;
 }
+/* End Defination Card Face */
 
+/* Defination Card Front */
 .card .front{
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
 }
+/* End defination Card Front */
 
+/* Defination Card Front Img */
 .card .front img{
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+/* End defination Card Front Img */
 
+/* Defination Card Front H3 */
 .card .front h3{
   position: absolute;
   bottom: 0;
@@ -168,7 +193,9 @@
   background: rgba(0, 0, 0, .4);
   text-align: center;
 }
+/* End defination Card Front H3 */
 
+/* Defination Card Back */
 .card .back{
   transform: perspective(600px) rotateY(180deg);
   background: rgb(3, 35, 54);
@@ -180,14 +207,18 @@
   text-align: center;
   box-shadow: 0 5px 10px #000;
 }
+/* End defination Card Back */
 
+/* Defination Card Back Link */
 .card .back .link{
   border-top: solid 1px #f3f3f3;
   height: 50px;
   line-height: 50px;
   padding-top: 15px;
 }
+/* End defination Card Back Link */
 
+/* Defination Card Back Link a */
 .card .back .link a{
   color: #f3f3f3;
   padding: 16px 35px;
@@ -195,39 +226,52 @@
   border: rgb(255, 181, 0) 1px solid;
   letter-spacing: 2px;
   color: #fff;
-  border-radius: 40px;
-  
+  border-radius: 40px; 
 }
+/* End defination Card Back Link a */
 
+/* Defination Card Back Link a hover */
 .card .back .link a:hover{
   background-color: rgb(255, 181, 0);
   transition: all 0.4s ease-in-out;
   transform: scale(1.30);
 }
+/* End defination Card Back Link a hover */
 
+/* Defination Card Back H3 */
 .card .back .h3{
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: clamp(1rem, 20vw, 2rem);
+  margin-top: 10px;
   letter-spacing: 2px;
 }
+/* End defination Card Back H3 */
 
+/* Defination Card Back P */
 .card .back .p{
   letter-spacing: 1px;
 }
+/* End defination Card Back P */
 
+/* Defination Card hover Front */
 .card:hover .front{
   transform: perspective(600px) rotateY(180deg);
 }
+/* End defination Card hover Front */
 
+/* Defination Card hover Back */
 .card:hover .back{
   transform: perspective(600px) rotateY(360deg);
 }
+/* End defination Card hover Back */
 
+/* Defination tecno */
 .tecno{
   justify-content: center;
   margin: 10px;
 }
+/* End defination tecno */
 
+/* Defination tecno img */
 .tecno img{
   min-width: 15px;
   max-width: 80px;
@@ -235,12 +279,16 @@
   max-height: 80px;
   margin: 5px;
 }
+/* End defination tecno img */
 
+/* Defination tecno img hover */
 .tecno img:hover{
   transition: all 0.2s ease-in-out;
   transform: scale(1.40);
 }
+/* End defination img hover */
 
+/* Defination footer-cc */
 .footer-c {
   position: relative;
   display: flex;
@@ -254,59 +302,136 @@
   color: white;
   border-radius: 5px;
 }
+/* End defination footer-c */
 
+/* Defination footer-c img */
 .footer-c img{
   max-width: 30px;
   max-height: 30px;
 }
+/* End defination footer-c img */
 
+/* Defination footer-c img hover */
 .footer-c img:hover{
   transition: all 0.2s ease-in-out;
   transform: scale(1.30);
 }
+/* End defination footer-c img hover */
 
+/* Defination center */
 .center{
   display: flex;
   justify-content: center;
 }
+/* End defination */
 
+/* Defination space-evenly */
 .space-evenly{
   display: flex;
   justify-content: space-evenly;
 }
+/* End defination space-evenly */
 
+/* Defination blanco */
 .blanco{
   border-style: outset;
   background-color: #fff;
   border-radius: 25px;
 }
+/* End defination blanco */
 
+/* Defination White */
 .white{
   color: white;
 }
+/* End defination white */
 
-  /* Definiendo el keyframes para cambiar */
-  @keyframes cambiar {
-    0% {
-      background-position: 0 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
+/* Fin CSS */
+
+/* Medias Querys */
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+/* Definition card */
+  .card{
+    width: 150px;
+    height: 150px;
   }
-  
-  /* Definiendo el keyframes para circle */
-  @keyframes circle {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
+/* End definition card */
+
+/* Defination Card Front h3 */
+  .card .front h3{
+    font-size: 0.6rem;
   }
+/* End defination Card Front h3 */
+
+/* Defination Card Back h3 */
+  .card .back h3{
+    font-size: 0.9em;
+    padding: 2px;
+    margin: 2px;
+  }
+/* End defination Card Back h3 */
+
+/* Defination Card Back p */
+  .card .back p{
+    font-size: 0.6em;
+  }
+/* End defination Card Back p */
+
+/* Defination Card Back Link */
+.card .back .link{
+  border-top: solid 1px #f3f3f3;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 8px;
+}
+/* End defination Card Back Link */
+
+/* Defination Card Back Link a */
+  .card .back .link a{
+    color: #f3f3f3;
+    padding: 5px 5px;
+    text-decoration: none;
+    border: rgb(255, 181, 0) 1px solid;
+    letter-spacing: 2px;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 10px;
+  }
+/* End defination Card Back Link a */
+
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .App-color{
+    color: #000;
+  }
+}
+
+/* Fin Medias Querys */
+
+/* Definiendo el keyframes para cambiar */
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Definiendo el keyframes para circle */
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
